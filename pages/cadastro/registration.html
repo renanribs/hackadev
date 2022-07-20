@@ -25,95 +25,100 @@
   </div>
   <div class="formulario-cadastro">
     <form action="">
-      <div class="formulario-dados-pessoais">
-        <div class="formulario-titulo-dados-pessoais">
-          <i class="fa-solid fa-list"></i> Dados Pessoais
+      <div class="formulario-tabelas-botao">
+        <div class="formulario-ajuste-botao">
+          <div class="formulario-dados-pessoais">
+            <div class="formulario-titulo-dados-pessoais">
+              <i class="fa-solid fa-list"></i> Dados Pessoais
+            </div>
+            <div class="field">
+              <b>Nome do responsável</b> <input type="text" name="nome" required="" />
+            </div>
+            <div class="field"><b>CNPJ</b> <input type="number" name="cnpj" required="" /></div>
+            <div class="field">
+              <b>Razão Social</b> <input type="text" name="razao-social" required="" />
+            </div>
+            <div class="field">
+              Inscrição Estadual <input type="number" name="inscricao-estadual" />
+            </div>
+            <div class="field">
+              Celular <input type="text" minlength="10" maxlength="14" name="celular" mask="(99) 99999-9999"
+                placeholder="(__)_____-____" />
+            </div>
+            <div class="field">
+              Telefone Fixo <input type="text" minlength="10" maxlength="14" mask="(99) 9999-9999" name="telefone-fixo"
+                placeholder="(__)____-____" />
+            </div>
+            <div class="field">
+              Nome do Vendedor <input type="text" name="nome-vendedor" />
+            </div>
+          </div>
+
+          <div class="formulario-endereco">
+            <div class="formulario-titulo-endereco">
+              <i class="fa-solid fa-location-dot"></i> Endereço
+            </div>
+            <div class="field">
+              <b>CEP</b> <input type="number" name="cep" required="" />
+              <i class="fa-solid fa-circle-question"></i><span id="formulario-cep" > Não sei meu cep</span>
+            </div>
+            <div class="field">
+              <b>Endereço</b> <input type="text" name="endereco" required="" />
+            </div>
+            <div class="field">
+              <b>Número</b> <input type="number" name="numero-endereco" required="" />
+            </div>
+            <div class="field">
+              Complemento <input type="number" name="complemento-endereco" />
+            </div>
+            <div class="field">
+              Referência <input type="number" name="referencia-endereco" />
+            </div>
+            <div class="field">
+              <b>Bairro</b> <input type="text" name="bairro-endereco" required="" />
+            </div>
+            <div class="field">
+              <b>Cidade</b> <input type="text" name="cidade-endereco" required="" />
+            </div>
+            <div class="field">
+              <b>Estado</b>
+              <select id="estado" name="estado" required="">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+              </select>
+            </div>
+          </div>
         </div>
-        <div class="field">
-          Nome do responsável <input type="text" name="nome" required="" />
+        <div class="registration-botao">
+          <button class="formulario-button-cancelar">Cancelar</button>
+          <input class="formulario-button-criar-conta" type="submit" name="enviar" value="Criar Conta" />
         </div>
-        <div class="field">CNPJ <input type="number" name="cnpj" required=""/></div>
-        <div class="field">
-          Razão Social <input type="text" name="razao-social" required="" />
-        </div>
-        <div class="field">
-          Inscrição Estadual <input type="number" name="inscricao-estadual" />
-        </div>
-        <div class="field">
-          Celular <input type="text" minlength="10" maxlength="14" name="celular" 
-          mask="(99) 99999-9999" placeholder="(__)_____-____"/>
-        </div>
-        <div class="field">
-          Telefone Fixo <input type="text" minlength="10" maxlength="14" 
-           mask="(99) 9999-9999" name="telefone-fixo" 
-          placeholder="(__)____-____" />
-        </div>
-        <div class="field">
-          Nome do Vendedor <input type="text" name="nome-vendedor" />
-        </div>
-      </div>
-      <div class="formulario-endereco">        
-        <div class="formulario-titulo-endereco">
-          <i class="fa-solid fa-location-dot"></i> Endereço</div>
-        <div class="field">
-          CEP <input type="number" name="cep" required="" />
-          <i class="fa-solid fa-circle-question"></i><span id="formulario-cep"> Não sei meu cep</span>
-        </div>
-        <div class="field">
-          Endereço <input type="text" name="endereco" required="" />
-        </div>
-        <div class="field">
-          Número <input type="number" name="numero-endereco" required=""/>
-        </div>
-        <div class="field">
-          Complemento <input type="number" name="complemento-endereco" />
-        </div>
-        <div class="field">
-          Referência <input type="number" name="referencia-endereco" />
-        </div>
-        <div class="field">
-          Bairro <input type="text" name="bairro-endereco" required=""/>
-        </div>
-        <div class="field">
-          Cidade <input type="text" name="cidade-endereco" required=""/>
-        </div>
-        <div class="field">
-          Estado
-          <select id="estado" name="estado" required="">
-            <option value="AC">Acre</option>
-            <option value="AL">Alagoas</option>
-            <option value="AP">Amapá</option>
-            <option value="AM">Amazonas</option>
-            <option value="BA">Bahia</option>
-            <option value="CE">Ceará</option>
-            <option value="DF">Distrito Federal</option>
-            <option value="ES">Espírito Santo</option>
-            <option value="GO">Goiás</option>
-            <option value="MA">Maranhão</option>
-            <option value="MT">Mato Grosso</option>
-            <option value="MS">Mato Grosso do Sul</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="PA">Pará</option>
-            <option value="PB">Paraíba</option>
-            <option value="PR">Paraná</option>
-            <option value="PE">Pernambuco</option>
-            <option value="PI">Piauí</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="RN">Rio Grande do Norte</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="RO">Rondônia</option>
-            <option value="RR">Roraima</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="SP">São Paulo</option>
-            <option value="SE">Sergipe</option>
-            <option value="TO">Tocantins</option>
-            <option value="EX">Estrangeiro</option>
-          </select>
-        </div>
-      </div>
-      <div class="registration-botao">
-        <button class="formulario-button-cancelar">Cancelar</button>
-      <input class="formulario-button-criar-conta" type="submit" name="enviar" value="Criar Conta" />
       </div>
     </form>
   </div>
