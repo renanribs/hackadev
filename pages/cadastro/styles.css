@@ -4,7 +4,27 @@
 }
 
 .formulario-cadastro {
-margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.formulario-tabelas-botao {
+  display: inline-block;
+  margin: 15px 15px 15px 15px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario-ajuste-botao {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .formulario-dados-pessoais {
@@ -12,13 +32,12 @@ margin-top: 20px;
   height: 450px;
   display: inline-block;
   position: relative;
-  vertical-align:top;
+  vertical-align: top;
   padding: 20px 100px 30px 20px;
   margin-top: 10px;
   margin-left: 20px;
-  border-top: 2px solid black;
-  box-shadow: 1px 1px 2px 2px grey;
-
+  border-top: 1px solid black;
+  box-shadow: 1px 1px 1px 1px grey;
 }
 
 .formulario-titulo-dados-pessoais {
@@ -30,7 +49,7 @@ margin-top: 20px;
   padding-bottom: 10px;
 }
 
-#registration-dados{
+#registration-dados {
   margin-right: 10px;
 }
 
@@ -45,16 +64,15 @@ margin-top: 20px;
   height: 450px;
   display: inline-block;
   position: relative;
-  vertical-align:top;
+  vertical-align: top;
   margin-left: 20px;
   margin-top: 10px;
   padding: 20px 100px 30px 20px;
-  border-top: 2px solid black;
-  box-shadow: 1px 1px 2px 2px grey;
+  border-top: 1px solid black;
+  box-shadow: 1px 1px 1px 1px grey;
 }
 
 .formulario-titulo-endereco {
-  width: 400px;
   font-size: 20px;
   text-align: left;
   margin-bottom: 40px;
@@ -63,8 +81,9 @@ margin-top: 20px;
 }
 
 .registration-botao {
-  margin-top: 10px;
-  text-align: center;
+
+  margin: 20px 0px 15px 0px;
+  text-align: right;
 }
 
 .formulario-button-cancelar {
@@ -78,8 +97,8 @@ margin-top: 20px;
 .formulario-button-criar-conta {
   width: 100px;
   height: 40px;
-  background-color: rgba(88,158,59);
-  color: white ;
+  background-color: rgba(88, 158, 59);
+  color: white;
   font-weight: bold;
   border-radius: 4px;
   border: none;
