@@ -1,0 +1,86 @@
+* {
+  font-family: Arial;
+  background-color: white;
+}
+
+.formulario-cadastro {
+margin-top: 20px;
+}
+
+.formulario-dados-pessoais {
+  width: 400px;
+  height: 450px;
+  display: inline-block;
+  position: relative;
+  vertical-align:top;
+  padding: 20px 100px 30px 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-top: 2px solid black;
+  box-shadow: 1px 1px 2px 2px grey;
+
+}
+
+.formulario-titulo-dados-pessoais {
+  width: 400px;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 40px;
+  border-bottom: 2px solid rgba(169, 169, 169, 0.3);
+  padding-bottom: 10px;
+}
+
+#registration-dados{
+  margin-right: 10px;
+}
+
+.field {
+  margin: 30px 1px 30px 1px;
+  text-align: right;
+  width: 400px;
+}
+
+.formulario-endereco {
+  width: 400px;
+  height: 450px;
+  display: inline-block;
+  position: relative;
+  vertical-align:top;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 20px 100px 30px 20px;
+  border-top: 2px solid black;
+  box-shadow: 1px 1px 2px 2px grey;
+}
+
+.formulario-titulo-endereco {
+  width: 400px;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 40px;
+  border-bottom: 2px solid rgba(169, 169, 169, 0.3);
+  padding-bottom: 10px;
+}
+
+.registration-botao {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.formulario-button-cancelar {
+  width: 100px;
+  height: 40px;
+  background-color: antiquewhite;
+  border-radius: 4px;
+  border: 1px solid rgba(169, 169, 169, 0.3);
+}
+
+.formulario-button-criar-conta {
+  width: 100px;
+  height: 40px;
+  background-color: rgba(88,158,59);
+  color: white ;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+}
