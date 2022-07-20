@@ -23,6 +23,104 @@
         <a href="#"><i class="fa-solid fa-bag-shopping" id="nav-icons"></i></a>
       </div>
     </div>
+    <div class="formulario-cadastro">
+      <form action="">
+        <div class="formulario-dados-pessoais">
+          <i class="fa-solid fa-list"></i
+          ><span class="formulario-titulo-dados-pessoais"> Dados Pessoais</span>
+
+          <hr />
+
+          <div class="field">
+            Nome do responsável <input type="text" name="nome" />
+          </div>
+          <div class="field">CNPJ <input type="number" name="cnpj" /></div>
+          <div class="field">
+            Razão Social <input type="text" name="razao-social" />
+          </div>
+          <div class="field">
+            Inscrição Estadual <input type="number" name="inscricao-estadual" />
+          </div>
+          <div class="field">
+            Celular <input type="number" name="celular" />
+          </div>
+          <div class="field">
+            Telefone Fixo <input type="number" name="telefone-fixo" />
+          </div>
+          <div class="field">
+            Nome do Vendedor <input type="text" name="nome-vendedor" />
+          </div>
+        </div>
+        <div class="formulario-endereco">
+          <i class="fa-solid fa-location-dot"></i
+          ><span class="formulario-titulo-endereco"> Endereço</span>
+          <hr />
+          <div class="field">
+            CEP <input type="number" name="cep" />
+            <i class="fa-solid fa-circle-question"></i
+            ><span id="formulario-cep"> Não sei meu cep</span>
+          </div>
+          <div class="field">
+            Endereço <input type="text" name="endereco" />
+          </div>
+          <div class="field">
+            Número <input type="number" name="numero-endereco" />
+          </div>
+          <div class="field">
+            Complemento <input type="number" name="complemento-endereco" />
+          </div>
+          <div class="field">
+            Referência <input type="number" name="referencia-endereco" />
+          </div>
+          <div class="field">
+            Bairro <input type="number" name="bairro-endereco" />
+          </div>
+          <div class="field">
+            Cidade <input type="number" name="cidade-endereco" />
+          </div>
+          <div class="field">
+            Estado
+            <select id="estado" name="estado">
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+              <option value="EX">Estrangeiro</option>
+            </select>
+          </div>
+        </div>
+        <button class="formulario-button-cancelar">Cancelar</button>
+        <input
+          class="formulario-button-criar-conta"
+          type="submit"
+          name="enviar"
+          value="Criar Conta"
+        />
+      </form>
+    </div>
     <footer>
       <div class="footer-div">
         <h2>Fashionista</h2>
