@@ -33,25 +33,29 @@
               <i class="fa-solid fa-list"></i> Dados Pessoais
             </div>
             <div class="field">
-              <b>Nome do responsável</b> <input type="text" name="nome" required="" />
-            </div>
-            <div class="field"><b>CNPJ</b> <input type="number" name="cnpj" required="" /></div>
-            <div class="field">
-              <b>Razão Social</b> <input type="text" name="razao-social" required="" />
+              <label><b>Nome do responsável </b></label><input type="text" class="form-input" name="nome" required="" />
             </div>
             <div class="field">
-              Inscrição Estadual <input type="number" name="inscricao-estadual" />
+              <label><b>CNPJ </b></label><input type="text" class="form-input" maxlength="14" name="cnpj" required=""
+                mask="99.999.999/9999-99" />
             </div>
             <div class="field">
-              Celular <input type="text" minlength="10" maxlength="14" name="celular" mask="(99) 99999-9999"
-                placeholder="(__)_____-____" />
+              <label></label><b>Razão Social</b> <input type="text" class="form-input" name="razao-social"
+                required="" />
             </div>
             <div class="field">
-              Telefone Fixo <input type="text" minlength="10" maxlength="14" mask="(99) 9999-9999" name="telefone-fixo"
-                placeholder="(__)____-____" />
+              <label>Inscrição Estadual</label> <input type="number" class="form-input" name="inscricao-estadual" />
             </div>
             <div class="field">
-              Nome do Vendedor <input type="text" name="nome-vendedor" />
+              <label>Celular</label> <input type="text" class="form-input" minlength="11" maxlength="11" name="celular"
+                mask="(99) 9 9999-9999" />
+            </div>
+            <div class="field">
+              <label>Telefone Fixo</label> <input type="text" class="form-input" minlength="10" maxlength="10"
+                mask="9999999999" name="telefone-fixo" />
+            </div>
+            <div class="field">
+              <label>Nome do Vendedor</label> <input type="text" class="form-input" name="nome-vendedor" />
             </div>
           </div>
 
@@ -60,30 +64,32 @@
               <i class="fa-solid fa-location-dot"></i> Endereço
             </div>
             <div class="field">
-              <b>CEP</b> <input type="number" name="cep" required="" />
-              <i class="fa-solid fa-circle-question"></i><span id="formulario-cep" > Não sei meu cep</span>
+              <label><b>CEP</b></label> <input type="text" class="form-input-cep" mask="99.999-999" name="cep"
+                required="" />
+              <i class="fa-solid fa-circle-question fa-xs"></i><span id="formulario-cep"> Não sei meu cep</span>
             </div>
             <div class="field">
-              <b>Endereço</b> <input type="text" name="endereco" required="" />
+              <label><b>Endereço</b></label> <input type="text" class="form-input" name="endereco" required="" />
             </div>
             <div class="field">
-              <b>Número</b> <input type="number" name="numero-endereco" required="" />
+              <label><b>Número</b></label> <input id="formulario-numero" type="text" class="form-input"
+                name="numero-endereco" required="" />
             </div>
             <div class="field">
-              Complemento <input type="number" name="complemento-endereco" />
+              <label>Complemento</label> <input type="text" class="form-input" name="complemento-endereco" />
             </div>
             <div class="field">
-              Referência <input type="number" name="referencia-endereco" />
+              <label>Referência</label> <input type="text" class="form-input" name="referencia-endereco" />
             </div>
             <div class="field">
-              <b>Bairro</b> <input type="text" name="bairro-endereco" required="" />
+              <label><b>Bairro</b></label> <input type="text" class="form-input" name="bairro-endereco" required="" />
             </div>
             <div class="field">
-              <b>Cidade</b> <input type="text" name="cidade-endereco" required="" />
+              <label><b>Cidade</b></label> <input type="text" class="form-input" name="cidade-endereco" required="" />
             </div>
             <div class="field">
               <b>Estado</b>
-              <select id="estado" name="estado" required="">
+              <select class="form-input" id="form-estado" name="estado" required="">
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapá</option>
