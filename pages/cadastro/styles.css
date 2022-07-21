@@ -1,6 +1,33 @@
 * {
   font-family: Arial;
   background-color: white;
+  color: #535353;
+}
+
+.form-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+  padding-left: 5px;
+  height: 30px;
+
+}
+
+.form-input-cep {
+  width: 80px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+  padding-left: 5px;
+  height: 30px;
+}
+
+#formulario-cep {
+  font-size: 12px;
+}
+
+#formulario-numero {
+  width: 40px;
 }
 
 .formulario-cadastro {
@@ -29,7 +56,7 @@
 
 .formulario-dados-pessoais {
   width: 400px;
-  height: 450px;
+  height: 500px;
   display: inline-block;
   position: relative;
   vertical-align: top;
@@ -37,7 +64,8 @@
   margin-top: 10px;
   margin-left: 20px;
   border-top: 1px solid black;
-  box-shadow: 1px 1px 1px 1px grey;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0.5px rgba(128, 128, 128, 0.3), 0 0 1em rgba(128, 128, 128, 0.3);
 }
 
 .formulario-titulo-dados-pessoais {
@@ -60,8 +88,8 @@
 }
 
 .formulario-endereco {
-  width: 400px;
-  height: 450px;
+  width: 450px;
+  height: 550px;
   display: inline-block;
   position: relative;
   vertical-align: top;
@@ -69,7 +97,8 @@
   margin-top: 10px;
   padding: 20px 100px 30px 20px;
   border-top: 1px solid black;
-  box-shadow: 1px 1px 1px 1px grey;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0.5px rgba(128, 128, 128, 0.3), 0 0 1em rgba(128, 128, 128, 0.3);
 }
 
 .formulario-titulo-endereco {
@@ -89,8 +118,9 @@
 .formulario-button-cancelar {
   width: 100px;
   height: 40px;
-  background-color: antiquewhite;
+  background-color: #d8d5d5;
   border-radius: 4px;
+  font-weight: bold;
   border: 1px solid rgba(169, 169, 169, 0.3);
 }
 
