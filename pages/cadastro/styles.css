@@ -2,22 +2,19 @@
   font-family: Arial;
   background-color: white;
   color: #535353;
+  margin: 0;
+  padding: 0;
 }
 
-.form-input {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-left: 10px;
-  padding-left: 5px;
-  height: 30px;
-
+body {
+  padding: 0%;
+  border: 0;
 }
 
 .form-input-cep {
   width: 80px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-left: 10px;
   padding-left: 5px;
   height: 30px;
 }
@@ -27,78 +24,75 @@
 }
 
 #formulario-numero {
-  width: 40px;
+  width: 3rem;
+}
+
+#form-estado {
+  width: 207px;
 }
 
 .formulario-cadastro {
   display: flex;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
 }
 
 .formulario-tabelas-botao {
-  display: inline-block;
-  margin: 15px 15px 15px 15px;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.formulario-ajuste-botao {
-  display: inline-block;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .formulario-dados-pessoais {
-  width: 400px;
-  height: 500px;
+  width: 50%;
+  height: 50%;
   display: inline-block;
   position: relative;
   vertical-align: top;
-  padding: 20px 100px 30px 20px;
+  padding: 20px 50px 30px 20px;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 15px;
   border-top: 1px solid black;
   border-radius: 2px;
-  box-shadow: inset 0 0 0.5px rgba(128, 128, 128, 0.3), 0 0 1em rgba(128, 128, 128, 0.3);
+  box-shadow: inset 0 0 0.5px rgba(128, 128, 128, 0.3),
+    0 0 1em rgba(128, 128, 128, 0.3);
 }
 
 .formulario-titulo-dados-pessoais {
-  width: 400px;
+  width: 100%;
   font-size: 20px;
   text-align: left;
   margin-bottom: 40px;
   border-bottom: 2px solid rgba(169, 169, 169, 0.3);
   padding-bottom: 10px;
 }
-
-#registration-dados {
+.form-dados-label,
+.form-end-label {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.form-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-left: 5px;
+  height: 2rem;
+  width: 12rem;
   margin-right: 10px;
 }
-
-.field {
-  margin: 30px 1px 30px 1px;
-  text-align: right;
-  width: 400px;
-}
-
 .formulario-endereco {
-  width: 450px;
-  height: 550px;
+  width: 50%;
+  height: 50%;
   display: inline-block;
   position: relative;
   vertical-align: top;
-  margin-left: 20px;
-  margin-top: 10px;
   padding: 20px 100px 30px 20px;
+  margin-top: 10px;
+  margin-left: 15px;
   border-top: 1px solid black;
   border-radius: 2px;
-  box-shadow: inset 0 0 0.5px rgba(128, 128, 128, 0.3), 0 0 1em rgba(128, 128, 128, 0.3);
+  box-shadow: inset 0 0 0.5px rgba(128, 128, 128, 0.3),
+    0 0 1em rgba(128, 128, 128, 0.3);
 }
 
 .formulario-titulo-endereco {
@@ -110,14 +104,15 @@
 }
 
 .registration-botao {
-
+  width: 100%;
   margin: 20px 0px 15px 0px;
-  text-align: right;
+  align-items: center;
 }
 
 .formulario-button-cancelar {
   width: 100px;
   height: 40px;
+  margin: 0px 10px 0px 15px;
   background-color: #d8d5d5;
   border-radius: 4px;
   font-weight: bold;
@@ -132,4 +127,67 @@
   font-weight: bold;
   border-radius: 4px;
   border: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .formulario-tabelas {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .formulario-dados-pessoais {
+    margin-left: 15px;
+  }
+
+  .field {
+    display: flex;
+    margin: 30px 1px 30px 1px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .form-end-label {
+    display: inline-block;
+    text-align: right;
+    width: 120px;
+    margin-left: 60px;
+  }
+
+  .form-dados-label {
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+  }
+
+  .form-end-field {
+    display: inline-block;
+    text-align: left;
+    margin-left: 5px;
+  }
+
+  .registration-botao {
+    margin: 20px 0px 15px 0px;
+    text-align: right;
+  }
+
+  .formulario-button-cancelar {
+    width: 100px;
+    height: 40px;
+    margin: 0px 15px 0px 0px;
+    background-color: #d8d5d5;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 1px solid rgba(169, 169, 169, 0.3);
+  }
+
+  .formulario-button-criar-conta {
+    width: 100px;
+    height: 40px;
+    background-color: rgba(88, 158, 59);
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+  }
 }
