@@ -4,11 +4,13 @@
   color: #535353;
   margin: 0;
   padding: 0;
+  
 }
 
 body {
   padding: 0%;
   border: 0;
+
 }
 
 .form-input-cep {
@@ -29,19 +31,17 @@ body {
 
 #form-estado {
   width: 207px;
+  margin-left: 5px;
 }
 
 .formulario-cadastro {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-left: 1rem;
 }
 
 .formulario-tabelas-botao {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 
 .formulario-dados-pessoais {
@@ -50,7 +50,7 @@ body {
   display: inline-block;
   position: relative;
   vertical-align: top;
-  padding: 20px 50px 30px 20px;
+  padding: 20px 60px 30px 20px;
   margin-top: 10px;
   margin-left: 15px;
   border-top: 1px solid black;
@@ -86,7 +86,7 @@ body {
   display: inline-block;
   position: relative;
   vertical-align: top;
-  padding: 20px 100px 30px 20px;
+  padding: 20px 60px 30px 20px;
   margin-top: 10px;
   margin-left: 15px;
   border-top: 1px solid black;
@@ -138,11 +138,12 @@ body {
 
   .formulario-dados-pessoais {
     margin-left: 15px;
+    padding: 20px 60px 80px 20px;
   }
 
   .field {
     display: flex;
-    margin: 30px 1px 30px 1px;
+    margin: 20px 1px 20px 1px;
     text-align: center;
     align-items: center;
   }
