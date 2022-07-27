@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
+  background-color: white;
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
@@ -10,43 +11,37 @@
   list-style: none;
   text-decoration: none;
 }
-
 :root {
   --main-color: ;
   --text-color: ;
   --bg-color: ;
 }
-
 html {
   height: 100%;
   min-height: 100%;
 }
-
 body {
+  background-color: white;
   display: flex;
   flex-direction: column;
   border: 0;
   min-height: 100%;
   padding: 0%;
 }
-
 .container {
   max-width: 1068px;
   margin: auto;
 }
-
 #pesquisar-icone {
   color: black;
   font-size: 1.8rem;
   margin-right: 10px;
 }
-
 #carrinho-icone {
   color: black;
   font-size: 1.8rem;
   cursor: pointer;
 }
-
 .header-carrinho{
     position:fixed;
     top:0;
@@ -54,36 +49,31 @@ body {
     width:360px;
     min-height:100vh;
     padding:20px;
-
 }
-
 header {
   top: 0;
   left: 0;
   width: 100%;
   background: var(--bg-color);
 }
-
 .navbar {
   display: flex;
   align-items: center;
   padding: 20px 0;
   flex-direction: column;
+  box-shadow: 1px 1px 4px 5px rgba(169 , 169, 169, 0.5);
 }
-
 .navbar-pesquisa {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-
 .form-pesquisa-input {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 5px ;
   margin: 4px;
 }
-
 footer {
   position: relative;
   bottom: 0px;
@@ -98,7 +88,6 @@ footer {
   padding-top: 2px;
   box-shadow: 1px 1px 4px 5px rgba(169 , 169, 169, 0.5);
 }
-
 .content-footer {
   color: black;
   font-size: small;
@@ -111,13 +100,8 @@ footer {
 .icons-navbar {
   display: flex;
   align-items: center;
-  padding-right: 3rem;
-  
+  padding-right: 3rem;  
 }
-
-
-
-
 
 @media screen and (min-width: 970px) {
   .navbar {
@@ -160,7 +144,7 @@ input[type=text] {
 }
 
 .form-input-cep {
-  width: 80px;
+  width: 90px;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding-left: 5px;
@@ -190,7 +174,9 @@ input[type=text] {
   display: inline;
   align-items: center;
 }
-
+#formulario-title{
+  text-align: center;
+}
 .formulario-dados-pessoais {
   display: flex;
   flex-direction: column;
