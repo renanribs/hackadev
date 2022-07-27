@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  padding: 0%;
+  border: 0;
+  /* background-color: rgb(230, 230, 230); */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0%;
+  min-height: 100%;
+ 
+  
+}
+
+ footer {
+  padding-top: 20px;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  height: 3.5rem;
+  align-items: center;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  color: rgb(34, 34, 34);
+  margin-top: auto;
+
+} 
+
+.logo {
+  max-width: 230px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons-navbar {
+  padding-right: 1rem;
+}
+.social-icons {
+  color: black;
+}
+
+#nav-icons {
+  color: black;
+  padding-left: 1rem;
+}
+
+
+
+/* CSS Daniel - checkout */
+
+/* Titulo e botão de voltar */
+.request-tittle{
+  font-size: 20px;
+  text-align: left;
+  margin: 1rem;
+}
+
+.return {
+font-size: 10px;
+text-decoration: none;
+color: black;
+}
+
+
+/* imagem produto do carrinho */
+.product-image {
+  max-width: 90px;
+  max-height: 40px;
+  width: auto;
+  height: auto;
+  display: flexbox;
+
+}
+ 
+/* tabela geral da revisão de produto */
+.product-review{
+ table-layout: auto;
+ display: flexbox;
+ align-items: center;
+ height: auto;
+ border-color: solid grey;
+ font-size: 12px;
+ border:  2px solid rgb(205, 205, 205);
+ margin-left: 0.3rem;
+ margin-right: 2.7rem;
+ margin-top: -1rem;
+ background-color: white;
+}
+
+
+/* tabela de revisão */
+.table-review {
+ display: flexbox;
+ justify-content:left;
+ align-items: center;
+ 
+}
+
+.review-tittle{
+  color: gray;
+  margin-top: -1rem;
+}
+
+ /* colunas e linhas da tabela de revisão */
+.product-review-title{
+  background: gray;
+  color: gray;
+}
+
+.product{
+  width: 30rem;
+  height: 1rem;
+}
+
+.attributes {
+  width: 20rem;
+}
+
+.prices {
+  width: 20rem;
+  color: grey;
+}
+
+.total {
+width: 1rem;
+color: grey;
+}
+
+/* TABELA DE RESUMO */ 
+.resume-table-tittle {
+  text-align: justify;
+  font-size: 20px;
+}
+
+/* tela de resumo e pagamento responsivo */
+.responsive {
+  width: 400px;
+  height: 600px;
+  margin-top: -8.2rem;
+  display: inline-block;
+  position: relative;
+  vertical-align: left;
+  padding: 20px 210px 37px 20px;
+  border: 1px solid grey;
+  background-color: rgb(252, 252, 252);
+}
+
+.main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 38px;
+  flex-wrap: wrap;
+}
+
+/* tela de total pedido */
+
+.resume-table{
+ 
+  height: 150px;
+  display: inline-block;
+  position: relative;
+  vertical-align: right;
+  padding: 10px 100px 10px 10px;
+  border-top: 1px solid rgb(141, 137, 137);
+  border-top-color: transparent;
+  border-bottom: 1px solid rgb(141, 137, 137);
+  border-bottom-color: transparent;
+  background-color: rgb(242, 242, 242);
+ }
+
+.sub-total{
+  width: 15rem;
+  height: 1.2rem;
+  font-size: 12px;
+  color: rgb(141, 137, 137);
+  display: flexbox;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.total-prices {
+  text-align: left;
+  display: flexbox;
+  margin: auto;
+}
+
+
+/* Quadrado azul de pontos */
+
+.icons-cupom{
+  display: flex;
+  border-style: dashed;
+  border-color: rgb(166, 166, 229);
+  width: 37.75rem;
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+  justify-content: center;
+  align-items:center;
+  
+  
+  
+}
+
+/* Forma de pagamento */ 
+
+p,
+label {
+  align-items: center;
+}
+
+
+input {
+  margin: 0.4rem
+}
+
+legend{
+  text-align: center;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.payment{
+ font-size: 15px;
+ display: flexbox;
+ padding: 1px;
+ background-color: rgb(242, 242, 242);
+ border: 2px solid rgb(205, 205, 205);
+}
+
+/* imagens dos bancos em depósito bancário*/
+.banks {
+  max-width: 80px;
+  max-height: 30px;
+  width: auto;
+  height: auto;
+}
+
+/* logo pix */
+.pix-button {
+  max-width: 60px;
+  max-height: 15px;
+  width: auto;
+  height: auto;
+}
+
+.cash-back{
+  max-width: 100px;
+  max-height: 40px;
+  width: auto;
+  height: auto;
+  align-items: flex-end;
+}
+
+/* botão de continuar*/
+
+.button{
+  margin-left: 30rem;
+}
+
+.continue-button {
+	box-shadow:inset 0px 9px 25px -5px #000000;
+	background-color:transparent;
+	border-radius:20px;
+	border:1px solid #29668f;
+	display:inline-block;
+	cursor:pointer;
+	color:#503c3c;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:10px 19px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #000000;
+}
+.continue-button:hover {
+	background-color:transparent;
+}
+.continue-button:active {
+	position:relative;
+	top:1px;
+}
+.continue-button:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.continue-button:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* ENTREGA */ 
+
+/* --- container de alterar email --- */
+
+.container-voce {
+  display: block;
+  height: 120vh;
+  width: 50%;
+  border: 1px solid gray;
+}
+
+h2 {
+  margin: 10px;
+}
+
+.container-voce .email {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* --- container de adicionar endereço e endereço para envio --- */
+
+.container-voce .destino{
+  display: flex;
+ 
+}
+
+.container-voce .destino .add {
+  display: flex;
+  width: 25px;
+  height: 100px;
+  margin: 10px;
+  padding: 2px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 0 5px 6px 0px gray ;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: white;
+  color: blue;
+
+}
+
+.container-voce .destino .endereco {
+  display: flex;
+  width: 60%;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid black;
+  box-shadow: 0 5px 6px 0px gray ;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+}
+
+.container-voce .destino .endereco p {
+  display: flex;
+  width: 50%;
+  justify-content: right;
+  align-items: flex-end;
+  font-size: 12px;
+ 
+  
+}
+
+.container-voce .destino .endereco p i {
+  color: blue;
+  margin: 0 0 0 5px ;
+
+}
+
+/* --- container para selecionar modo de entrega --- */
+
+.container-entrega {
+  display: flex;
+  flex: 1;
+  width: 99%;
+  height: 250px;
+  margin: 0 0 10px 5px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.card {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: 4px 3px 16px -1px rgba(0, 0, 0, 0.14);
+  box-shadow: 4px 3px 16px -1px rgba(0, 0, 0, 0.14);
+}
+
+.container-entrega .card .chekbox {
+  
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-entrega .card label {
+
+  margin: 5px;
+}
+
+
+
+.container-entrega .card .preço-frete {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-weight: bold;
+}
+
+.container-entrega .card .prazo-entrega {
+  font-size: 10px;
+}
+
+
+/* --- Caixa de atenção para prazo de entrega --- */
+
+.container-voce .atencao {
+  display: block;
+  margin: 10px;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgb(211, 210, 210);
+  font-size: 15px;
+}
+
+.container-voce .atencao :nth-child(1) {
+  color: blue;
+  font-size: 15px;
+  margin: 10px;
+}
+
+
+/* --- container de caixa de observação e link para voltar ao carrinho --- */
+
+h4 {
+  margin: 10px;
+}
+
+.container-voce .observacao {
+  margin: 10px;
+  display: block;
+  border-radius: 5px;
+  width: 95%;
+  padding: 5px;
+}
+
+.container-voce .voltar-carrinho {
+  display: block;
+  margin: 20px 0 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+}
+
+
+@media (max-width: 650px) {
+  .container-voce {
+      width: 90%;
+      height: 100vw;
+  }
+}
+
+
+
+  
+
+
+
+

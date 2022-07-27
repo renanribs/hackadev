@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../checkout/stylescheckout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fashionista</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="logo" src="../checkout/img/logo.svg" alt="Fashionista" />
+      <div class="icons-navbar">
+        <a href="#">
+          <i class="fa-solid fa-magnifying-glass" id="nav-icons"></i>
+        </a>
+        <a href="#"><i class="fa-solid fa-bag-shopping" id="nav-icons"></i></a>
+      </div>
+    </div>
+
+    <div class="request">
+      <div class="request-tittle">Seu Pedido
+      </div>
+    </div>
+    <div class="product-review">
+      <table class="table-review">
+        <tr>
+          <div class="product-review-title">
+            <td></td>
+            <td><div class="review-tittle">Produto</div></td>
+            <td><div class="review-tittle">Atributos</div></td>
+            <td><div class="review-tittle">Preço Unitário</div></td>
+            <td><div class="review-tittle">Total</div></td>
+          </div> 
+            </tr>
+            <br>
+            <tr>
+              <div class="first-product"></div>
+              <td><img class="product-image" src="../checkout/img/iphone.png" alt="iphone" /></td>
+              <td><div class="product">Iphone X 256GB </div></td>
+              <td><div class="attributes">Cor <b>Black</b></div></td>
+              <td><div class="prices"><s>R$ 2.879,00</s> R$ 2.519,10</div></td>
+              <td><div class="total">R$ 2.519,10</div></td>
+            </tr>
+            <br>
+            <tr>
+              <div class="second-product"></div>
+              <td><img class="product-image" src="../checkout/img/tenis.jpg" alt="tenis" /></td>
+              <td><div class="product">Tênis Nike Feminino Corrida Revolution 5</div></td>
+              <td><div class="attributes">Cor <b>Rosa</b></div></td>
+              <td><div class="prices"><s>R$ 300,00</s> R$ 209,99</div></td>
+              <td><div class="total">R$ 209,99</div></td>
+            </tr>
+
+        
+      </table> 
+    </div>
+    <div class="main">
+      <div class="container-voce">
+
+        <h2>Você</h2>
+  
+        <div class="email">
+          <p>fashion@gmail.com</p> <a href="../cadastro/registration.html">sair e trocar</a>
+        </div>
+  
+        <h2>Destino</h2>
+  
+        <div class="destino">
+  
+          <a href="#" class="add"><i class="fa-solid fa-circle-plus"></i></a>
+  
+          <div class="endereco">
+            Praça da matriz, n. 174 
+            Centro, Itaberái - GO 
+            76630-000
+            
+            <p>Endereço para envio <i class="fa-solid fa-circle-check"></i></p>
+  
+          </div>
+  
+        </div>
+  
+        <h2>Forma de envio</h2>
+  
+        <div class="forma-de-envio">
+  
+          <div class="container-entrega">
+            <div class="col">
+              <div class="row">
+                <div class="card">
+                  <input name="entrega" type="radio" value="retirada local" class="checkbox">
+                  <label>Retirada no local</label>  
+                  <p class="prazo-entrega"></p>
+                  <p class="preço-frete">Grátis</p>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="card">
+                  <div class="checkbox"><input name="entrega" type="radio" value="motoboy" >
+                  <label>Motoboy</label>
+                  <p class="prazo-entrega"></p>
+                  </div>
+                  <p class="preço-frete">R$ 15,00</p>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="card">
+                  <input name="entrega" type="radio" value="pac" class="checkbox">
+                  <label>PAC</label>
+                  <p class="prazo-entrega">Previsão: 5 dias úteis</p>
+                  <p class="preço-frete">R$ 32,20</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col">
+              <div class="row">
+                <div class="card">
+                  <input name="entrega" type="radio" value="frete gratis" class="checkbox">
+                  <label>Frete-grátis</label>
+                  <p class="prazo-entrega"></p>
+                  <p class="preço-frete">Grátis</p> 
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="card">
+                  <input name="entrega" type="radio" value="retirada proxima" class="checkbox">
+                  <label>Retirar próximo ao meu endereço</label>
+                  <p class="prazo-entrega">Previsão: 4 dias úteis</p>
+                  <p class="preço-frete">R$ 20,70</p> 
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="card">
+                  <input name="entrega" type="radio" value="package" class="checkbox">
+                  <label>Package</label>
+                  <p class="prazo-entrega">Previsão: 4 dias úteis</p>
+                  <p class="preço-frete">R$ 35,50</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <p class="atencao"><i class="fa-solid fa-circle-exclamation"></i> Prazo de entrega dos Correios é de cinco dias após a postagem</p>
+  
+          <h4>Observações</h4>
+          <textarea name="observação" cols="60" rows="4" class="observacao" placeholder="Adicione alguma informação adicional relacionada ao seu pedido"></textarea>
+  
+          <a href="../carrinho/cart.html" class="voltar-carrinho"><i class="fa-solid fa-angle-left"></i> Voltar para o carrinho</a>
+  
+        </div>
+        </div>
+
+    <div class="responsive">
+      <div class="resume">
+        <table class="resume-table">
+          <tr>
+            <h3 class="resume-table-tittle">Resumo</h3>
+            <br>
+            <td><div class="sub-total">Sub-total</div></td>
+            <td><div class="sub-total">R$ 2.729,09</div></td>
+          </tr>
+        <tr>
+          <td><div class="sub-total">Descontos</div></td>
+          <td><div class="sub-total">- R$ 150,00</div></td>
+        </tr>
+        <tr>
+          <th rowspan="4"><div class="total-prices">TOTAL DO PEDIDO</div></th>
+          <td><div class="total-prices"><b>R$ 2.579,09</b></div></td>
+        </tr>
+        <tr>
+          <td><div class="sub-total">Em até 10X de R$ 257,91</div></td>
+        </tr>
+        <tr>
+          <td><div class="sub-total">ou R$ 2.579,09 no</div></td>
+        </tr>
+        <tr>
+          <td><div class="sub-total">Pix com 10% de desconto</div></td>
+        </tr>
+      </table>
+
+        <div class="cupom">
+          <div class="icons-cupom">
+            <img class="cash-back" src="../checkout/img/cashback.png" alt="cash">
+               <td class="offer-text">Você ganha 2.000,00 pontos nesta compra. Aproveite!</td>
+          </div>
+          <br>
+          <div>
+            <label for="cupom">Cupom de desconto</label>
+            <input type="text" id="cupom" name="cupom">
+        </div>
+        <input type="submit" value="Aplicar">
+        <br>
+        </div>
+  
+      <fieldset class="payment">
+        <legend>
+          Como deseja pagar?
+        </legend>
+        
+        <div>
+          <input type="radio" id="ticket" name="payment-button" value="ticket"
+             checked>
+          <i class="fa-solid fa-money-bill-wave"></i>
+          <label>Boleto</label> 
+        </div>
+        <br>
+        <div>
+          <input type="radio" id="credit-card" name="payment-button" value="credit-card"
+             checked>
+          <i class="fa-solid fa-credit-card"></i>
+          <label>Cartão de Crédito</label> 
+        </div>
+        <br>
+        <div>
+          <input type="radio" id="bank-deposit" name="payment-button" value="bank-deposit"
+             checked>
+          <i class="fa-solid fa-landmark"></i>
+          <label>Depósito bancário</label>
+          <img class="banks" src="../checkout//img/bb.png" alt="bb">
+          <img class="banks" src="../checkout//img/bradesco.png" alt="bra">
+          <img class="banks" src="../checkout//img/itau.png" alt="itau">
+        </div>
+        <br>
+        <div>
+          <input type="radio" id="pix-input" name="payment-button" value="pix-input"
+             checked>
+          <img class="pix-button" src="../checkout/img/pix.png" alt="pix">
+          <label>PIX</label> 
+        </div>
+      </fieldset>
+        <br>
+      </div>
+      <div class="button"><a href="#" class="continue-button">CONTINUAR</a></div>
+      
+     </div>
+     </div>
+     <footer>
+      <div class="footer-div">
+        <h2>Fashionista</h2>
+        <div class="content-footer">
+          Copyright©2022-2022, Fashionista Company. Todos os direitos
+          reservados.
+        </div>
+      </div>
+    </div>
+  </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/81e40cb5df.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
