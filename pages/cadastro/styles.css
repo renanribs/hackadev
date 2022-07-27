@@ -1,16 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 * {
-  font-family: Arial;
-  background-color: white;
-  color: #535353;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  
+  scroll-padding: 2rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --main-color: ;
+  --text-color: ;
+  --bg-color: ;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
 }
 
 body {
-  padding: 0%;
+  display: flex;
+  flex-direction: column;
   border: 0;
+  min-height: 100%;
+  padding: 0%;
+}
 
+.container {
+  max-width: 1068px;
+  margin: auto;
+}
+
+#pesquisar-icone {
+  color: black;
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+
+#carrinho-icone {
+  color: black;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.header-carrinho{
+    position:fixed;
+    top:0;
+    right:0;
+    width:360px;
+    min-height:100vh;
+    padding:20px;
+
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-color);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  flex-direction: column;
+}
+
+.navbar-pesquisa {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.form-pesquisa-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px ;
+  margin: 4px;
+}
+
+footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  height: 2.5rem;
+  align-items: center;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  color: rgb(34, 34, 34);
+  margin-top: auto;
+  margin-top: 5px;
+  padding-top: 2px;
+  box-shadow: 1px 1px 4px 5px rgba(169 , 169, 169, 0.5);
+}
+
+.content-footer {
+  color: black;
+  font-size: small;
+}
+.logo {
+  max-width: 230px;
+  max-height: 100px;
+  height: auto;
+}
+.icons-navbar {
+  display: flex;
+  align-items: center;
+  padding-right: 3rem;
+  
+}
+
+
+
+
+
+@media screen and (min-width: 970px) {
+  .navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  }
+  .container {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-device-width: 452px) {
+  .content-footer {
+    color: black;
+    font-size: xx-small;
+  }
+}
+
+/* Código da tela de cadastro */
+
+#form-id-img {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 300px;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
+input[type=text] {
+  /*remover borda do input */
+  outline: none
 }
 
 .form-input-cep {
@@ -35,34 +181,38 @@ body {
 }
 
 .formulario-cadastro {
-  display: flex;
-  padding-left: 1rem;
+  display: block;
+  margin: auto;
+  justify-content: center;
 }
 
 .formulario-tabelas-botao {
-  display: flex;
-  flex-direction: column;
+  display: inline;
+  align-items: center;
 }
 
 .formulario-dados-pessoais {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 50%;
-  display: inline-block;
   position: relative;
   vertical-align: top;
-  padding: 20px 60px 30px 20px;
+  padding: 20px 50px 30px 60px;
   margin-top: 10px;
   margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 1px;
   border-top: 1px solid black;
   border-radius: 2px;
+  justify-content: center;
   box-shadow: inset 0 0 0.5px rgba(128, 128, 128, 0.3),
     0 0 1em rgba(128, 128, 128, 0.3);
 }
-
 .formulario-titulo-dados-pessoais {
   width: 100%;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
   margin-bottom: 40px;
   border-bottom: 2px solid rgba(169, 169, 169, 0.3);
   padding-bottom: 10px;
@@ -71,6 +221,8 @@ body {
 .form-end-label {
   margin-bottom: 5px;
   margin-top: 5px;
+  width: 80px;
+  margin-right: 0px;
 }
 .form-input {
   border: 1px solid #ccc;
@@ -81,14 +233,16 @@ body {
   margin-right: 10px;
 }
 .formulario-endereco {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+
   height: 50%;
-  display: inline-block;
   position: relative;
   vertical-align: top;
-  padding: 20px 60px 30px 20px;
+  padding: 20px 50px 30px 60px;
   margin-top: 10px;
   margin-left: 15px;
+  margin-right: 15px;
   border-top: 1px solid black;
   border-radius: 2px;
   box-shadow: inset 0 0 0.5px rgba(128, 128, 128, 0.3),
@@ -96,17 +250,20 @@ body {
 }
 
 .formulario-titulo-endereco {
+  width: 100%;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
   margin-bottom: 40px;
   border-bottom: 2px solid rgba(169, 169, 169, 0.3);
   padding-bottom: 10px;
 }
 
 .registration-botao {
+  display: flex;
   width: 100%;
-  margin: 20px 0px 15px 0px;
+  margin: 10px 0px 15px 0px;
   align-items: center;
+  justify-content: center;
 }
 
 .formulario-button-cancelar {
@@ -129,16 +286,35 @@ body {
   border: none;
 }
 
-@media screen and (min-width: 1024px) {
+#form-footer-h2 {
+  color: black;
+  font-size: medium;
+}
+
+@media screen and (min-width: 970px) {
+  img {
+    margin-left: 5px;
+    margin-right: 2px;
+  }
+
+
   .formulario-tabelas {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
   }
 
   .formulario-dados-pessoais {
+    display: inline-block;
     margin-left: 15px;
     padding: 20px 60px 80px 20px;
+  }
+
+  .formulario-endereco {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 20px 60px 30px 20px;
   }
 
   .field {
@@ -168,8 +344,12 @@ body {
   }
 
   .registration-botao {
-    margin: 20px 0px 15px 0px;
+    display: flex;
+    margin: 20px 0px 30px 0px;
+    padding-right: 15px;
     text-align: right;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 
   .formulario-button-cancelar {
