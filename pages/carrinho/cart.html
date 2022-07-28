@@ -1,40 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../styles.css" />
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="favicon icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/pages/carrinho/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Fashionista</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <img class="logo" src="../img/logo.svg" alt="Fashionista" />
-      <div class="icons-navbar">
-        <a href="#">
-          <i class="fa-solid fa-magnifying-glass" id="nav-icons"></i
-        ></a>
-        <a href="#"><i class="fa-solid fa-bag-shopping" id="nav-icons"></i></a>
-      </div>
-    </div>
-    <footer>
-      <div class="footer-div">
-        <h2>Fashionista</h2>
-        <div class="content-footer">
-          Copyright©2022-2022, Fashionista Company. Todos os direitos
-          reservados.
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <div class="div-logo">
+              <a href="/pages/home/home.html" class="logo">Loja Ecommerce</a>
+            </div>
+            <div class="icons-navbar">
+                    <div class="search-box">
+                        <input type="text" class="search-txt" placeholder="Pesquisar">
+                        <a href="#">
+                            <i class='bx bx-search-alt' id="search"></i>
+                        </a>
+                    </div>
+                    <div class="popup-carrinho">
+                        <a href="#">
+                            <i class='bx bx-user' id="user-icone"></i></a>
+                        <i class='bx bx-shopping-bag' id="carrinho-icone"></i>
+
+                    </div>
+            </div>
+            <div class="cart">
+                <h2 class="cart-title">Seu carrinho</h2>
+                <p>está vazio</p>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">R$ 0</div>
+                </div>
+                <button type="button" class="btn-buy">Comprar Agora</button>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
         </div>
-      </div>
+    </header>
+
+    <h1 align="center" >Meu Carrinho</h1>
+    <footer>
+        <div class="footer-div">
+            <h2 id="form-footer-h2">****</h2>
+            <div class="content-footer">
+                Copyright©2022-2022, Company. Todos os direitos
+                reservados.
+            </div>
+        </div>
     </footer>
-    <script
-      src="https://kit.fontawesome.com/81e40cb5df.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://kit.fontawesome.com/81e40cb5df.js" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+
+
+
+</body>
+
 </html>
