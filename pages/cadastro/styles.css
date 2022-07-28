@@ -1,154 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
+/*  inicio do cabeçalho e rodapé */
 * {
-  background-color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  scroll-padding: 2rem;
+  scroll-padding-top: 2rem;
   scroll-behavior: smooth;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
+
 :root {
-  --main-color: ;
-  --text-color: ;
-  --bg-color: ;
+  --main-color: #fd4646;
+  --text-color: #171427;
+  --bg-color: #fff;
 }
+
 html {
   height: 100%;
   min-height: 100%;
 }
+
 body {
-  background-color: white;
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
-  border: 0;
   min-height: 100%;
-  padding: 0%;
 }
-.container {
-  max-width: 1068px;
-  margin: auto;
-}
-#pesquisar-icone {
-  color: black;
-  font-size: 1.8rem;
-  margin-right: 10px;
-}
-#carrinho-icone {
-  color: black;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-.header-carrinho{
-    position:fixed;
-    top:0;
-    right:0;
-    width:360px;
-    min-height:100vh;
-    padding:20px;
-}
+
 header {
+  position: relative;
+  text-align: center;
+  align-items: center;
   top: 0;
   left: 0;
   width: 100%;
+  height: auto;
   background: var(--bg-color);
+  box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+  z-index: 100;
 }
-.navbar {
+
+.nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 20px 0;
-  flex-direction: column;
-  box-shadow: 1px 1px 4px 5px rgba(169 , 169, 169, 0.5);
 }
-.navbar-pesquisa {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+
+.container {
+  max-width: 1068px;
+  margin: auto;
+  width: 100%;
 }
-.form-pesquisa-input {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 5px ;
-  margin: 4px;
+
+.div-logo {
+  text-align: left;
+  top: 0;
+  left: 0;
+  width: 360px;
+  min-height: 5vh;
+  padding: 20px;
 }
+
+.logo {
+  top: 0;
+  left: 0;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  max-width: 230px;
+  max-height: 100px;
+  height: auto;
+  margin-left: 15px;
+  padding-left: 20px;
+}
+
+/*  inicio do rodapé */
 footer {
   position: relative;
-  bottom: 0px;
-  width: 100%;
-  height: 2.5rem;
-  align-items: center;
+  top: 0;
+  left: 0;
   text-align: center;
-  background: rgb(255, 255, 255);
-  color: rgb(34, 34, 34);
   margin-top: auto;
-  margin-top: 5px;
-  padding-top: 2px;
-  box-shadow: 1px 1px 4px 5px rgba(169 , 169, 169, 0.5);
+  width: 100%;
+  background: var(--bg-color);
+  box-shadow: 0 1px 4px rgba(41, 37, 37, 0.4);
+  z-index: 100;
 }
+
+#form-footer-h2 {
+  color: black;
+  font-size: medium;
+}
+
 .content-footer {
   color: black;
   font-size: small;
 }
-.logo {
-  max-width: 230px;
-  max-height: 100px;
-  height: auto;
-}
-.icons-navbar {
-  display: flex;
-  align-items: center;
-  padding-right: 3rem;  
-}
 
-@media screen and (min-width: 970px) {
-  .navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 0;
-  }
-  .container {
-    max-width: 1068px;
-    margin: auto;
-    width: 100%;
+/*  fim do rodapé */
+
+@media (max-width: 700px) {
+  .nav {
+    display: flex;
   }
 }
 
-@media screen and (max-device-width: 452px) {
+@media screen and (max-device-width: 515px) {
   .content-footer {
     color: black;
     font-size: xx-small;
   }
 }
 
+/*  fim do cabeçalho e rodapé */
+
 /* Código da tela de cadastro */
-
-#form-id-img {
-  padding-top: 2px;
-  padding-bottom: 2px;
-  width: 300px;
-}
-
-img {
-  margin: auto;
-  display: block;
-}
-
-input[type=text] {
-  /*remover borda do input */
-  outline: none
-}
-
 .form-input-cep {
-  width: 90px;
+  width: 80px;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding-left: 5px;
   height: 30px;
+  outline: none;
 }
 
 #formulario-cep {
@@ -165,22 +140,27 @@ input[type=text] {
 }
 
 .formulario-cadastro {
-  display: block;
+  display: flex;
   margin: auto;
   justify-content: center;
+}
+#form-titulo-cadastro {
+  text-align: center;
+}
+#form-subtitle-cadastro{
+  text-align: center;
+  font-size: small;
+  color: red;
 }
 
 .formulario-tabelas-botao {
   display: inline;
   align-items: center;
 }
-#formulario-title{
-  text-align: center;
-}
+
 .formulario-dados-pessoais {
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 50%;
   position: relative;
   vertical-align: top;
@@ -195,6 +175,7 @@ input[type=text] {
   box-shadow: inset 0 0 0.5px rgba(128, 128, 128, 0.3),
     0 0 1em rgba(128, 128, 128, 0.3);
 }
+
 .formulario-titulo-dados-pessoais {
   width: 100%;
   font-size: 20px;
@@ -203,6 +184,7 @@ input[type=text] {
   border-bottom: 2px solid rgba(169, 169, 169, 0.3);
   padding-bottom: 10px;
 }
+
 .form-dados-label,
 .form-end-label {
   margin-bottom: 5px;
@@ -210,6 +192,7 @@ input[type=text] {
   width: 80px;
   margin-right: 0px;
 }
+
 .form-input {
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -217,11 +200,12 @@ input[type=text] {
   height: 2rem;
   width: 12rem;
   margin-right: 10px;
+  outline: none;
 }
+
 .formulario-endereco {
   display: flex;
   flex-direction: column;
-
   height: 50%;
   position: relative;
   vertical-align: top;
@@ -246,20 +230,10 @@ input[type=text] {
 
 .registration-botao {
   display: flex;
+  justify-content: center;
   width: 100%;
   margin: 10px 0px 15px 0px;
   align-items: center;
-  justify-content: center;
-}
-
-.formulario-button-cancelar {
-  width: 100px;
-  height: 40px;
-  margin: 0px 10px 0px 15px;
-  background-color: #d8d5d5;
-  border-radius: 4px;
-  font-weight: bold;
-  border: 1px solid rgba(169, 169, 169, 0.3);
 }
 
 .formulario-button-criar-conta {
@@ -272,17 +246,13 @@ input[type=text] {
   border: none;
 }
 
-#form-footer-h2 {
-  color: black;
-  font-size: medium;
-}
-
+/*Media Query*/
 @media screen and (min-width: 970px) {
-  img {
-    margin-left: 5px;
-    margin-right: 2px;
+  .container {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
   }
-
 
   .formulario-tabelas {
     display: flex;
@@ -294,7 +264,7 @@ input[type=text] {
   .formulario-dados-pessoais {
     display: inline-block;
     margin-left: 15px;
-    padding: 20px 60px 80px 20px;
+    padding: 20px 60px 30px 20px;
   }
 
   .formulario-endereco {
@@ -338,16 +308,6 @@ input[type=text] {
     justify-content: flex-end;
   }
 
-  .formulario-button-cancelar {
-    width: 100px;
-    height: 40px;
-    margin: 0px 15px 0px 0px;
-    background-color: #d8d5d5;
-    border-radius: 4px;
-    font-weight: bold;
-    border: 1px solid rgba(169, 169, 169, 0.3);
-  }
-
   .formulario-button-criar-conta {
     width: 100px;
     height: 40px;
@@ -356,5 +316,18 @@ input[type=text] {
     font-weight: bold;
     border-radius: 4px;
     border: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    display: flex;
+  }
+}
+
+@media screen and (max-device-width: 515px) {
+  .content-footer {
+    color: black;
+    font-size: xx-small;
   }
 }
