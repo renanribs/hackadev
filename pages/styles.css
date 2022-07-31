@@ -48,33 +48,29 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 0px 0;
 }
 
 .container {
   max-width: 1068px;
   margin: auto;
   width: 100%;
+  justify-content: space-between;
 }
 
 .div-logo {
   text-align: left;
   top: 0;
   left: 0;
-  width: 360px;
-  min-height: 5vh;
-  padding: 20px;
+  padding: 5px;
 }
 
-.logo {
+.logo-navbar {
   top: 0;
   left: 0;
-  font-size: 1.1rem;
-  color: var(--text-color);
-  font-weight: 400;
-  max-width: 230px;
-  max-height: 100px;
+  width: 200px;
   height: auto;
+
   margin-left: 15px;
   padding-left: 20px;
 }
@@ -244,7 +240,7 @@ footer {
   }
   .nav {
     display: flex;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
 
   .search-box {
