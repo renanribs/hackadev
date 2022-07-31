@@ -1,201 +1,181 @@
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  --main-color: #fd4646;
+  --text-color: #171427;
+  --bg-color: #fff;
 }
-
-html {
-  height: 100%;
-  min-height: 100%;
-}
-
-body {
-  padding: 0%;
-  border: 0;
-  /* background-color: rgb(230, 230, 230); */
+section {
   display: flex;
   flex-direction: column;
-  padding-bottom: 0%;
-  min-height: 100%;
- 
-  
-}
 
- footer {
-  padding-top: 20px;
-  position: relative;
-  bottom: 0px;
   width: 100%;
-  height: 3.5rem;
-  align-items: center;
-  text-align: center;
-  background: rgb(255, 255, 255);
-  color: rgb(34, 34, 34);
-  margin-top: auto;
-
-} 
-
-.logo {
-  max-width: 230px;
-  max-height: 100px;
-  width: auto;
-  height: auto;
+  /* margin: auto;
+   */
 }
-
-.navbar {
-  background-color: rgb(255, 255, 255);
-  padding: 0 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.icons-navbar {
-  padding-right: 1rem;
-}
-.social-icons {
-  color: black;
-}
-
-#nav-icons {
-  color: black;
-  padding-left: 1rem;
-}
-
-
-
 /* CSS Daniel - checkout */
-
+.checkout-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.form-input {
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+.checkout-button-login {
+  padding: 5px;
+  background-color: rgba(88, 158, 59);
+  color: var(--bg-color);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#checkout-dados-login {
+  text-align: center;
+}
 /* Titulo e botão de voltar */
-.request-tittle{
+.request-tittle {
   font-size: 20px;
   text-align: left;
   margin: 1rem;
 }
 
 .return {
-font-size: 10px;
-text-decoration: none;
-color: black;
+  font-size: 10px;
+  text-decoration: none;
+  color: black;
 }
 
-
 /* imagem produto do carrinho */
+.checkout-dados {
+  display: inline;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 10px;
+}
+.checkout-descricao-detalhado {
+  text-align: center;
+  font-size: medium;
+}
+.bx {
+  font-size: large;
+}
 .product-image {
   max-width: 90px;
   max-height: 40px;
   width: auto;
   height: auto;
   display: flexbox;
-
 }
- 
+
 /* tabela geral da revisão de produto */
-.product-review{
- table-layout: auto;
- display: flexbox;
- align-items: center;
- height: auto;
- border-color: solid grey;
- font-size: 12px;
- border:  2px solid rgb(205, 205, 205);
- margin-left: 0.3rem;
- margin-right: 2.7rem;
- margin-top: -1rem;
- background-color: white;
+.product-review {
+  margin: 5px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
 }
-
 
 /* tabela de revisão */
-.table-review {
- display: flexbox;
- justify-content:left;
- align-items: center;
- 
-}
-
-.review-tittle{
+.review-tittle {
   color: gray;
   margin-top: -1rem;
 }
 
- /* colunas e linhas da tabela de revisão */
-.product-review-title{
+/* colunas e linhas da tabela de revisão */
+.product-review-title {
   background: gray;
   color: gray;
 }
-
-.product{
-  width: 30rem;
-  height: 1rem;
+.checkout-produto-nome {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.checkout-produto-descricao {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.checkout-produto-preco {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.checkout-produto-img {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.checkout-foto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 30px;
 }
 
-.attributes {
-  width: 20rem;
-}
-
-.prices {
-  width: 20rem;
-  color: grey;
-}
-
-.total {
-width: 1rem;
-color: grey;
-}
-
-/* TABELA DE RESUMO */ 
+/* TABELA DE RESUMO */
 .resume-table-tittle {
-  text-align: justify;
   font-size: 20px;
+  margin: 10px;
+  text-align: center;
 }
 
 /* tela de resumo e pagamento responsivo */
 .responsive {
-  width: 400px;
-  height: 600px;
-  margin-top: -8.2rem;
-  display: inline-block;
-  position: relative;
-  vertical-align: left;
-  padding: 20px 210px 37px 20px;
-  border: 1px solid grey;
-  background-color: rgb(252, 252, 252);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  align-items: center;
+  margin: 10px;
+}
+.checkout-descricao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.first-product {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-.main{
+.main {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-right: 38px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  margin: 5px;
+  border-radius: 10px;
+  align-items: flex-start;
 }
 
 /* tela de total pedido */
 
-.resume-table{
- 
+.resume-table {
   height: 150px;
-  display: inline-block;
+  align-items: center;
+  display: flex;
   position: relative;
-  vertical-align: right;
-  padding: 10px 100px 10px 10px;
+  padding: auto;
+  margin: auto;
   border-top: 1px solid rgb(141, 137, 137);
   border-top-color: transparent;
   border-bottom: 1px solid rgb(141, 137, 137);
   border-bottom-color: transparent;
   background-color: rgb(242, 242, 242);
- }
+}
 
-.sub-total{
-  width: 15rem;
+.sub-total {
   height: 1.2rem;
   font-size: 12px;
   color: rgb(141, 137, 137);
-  display: flexbox;
-  margin: auto;
-  justify-content: space-between;
 }
 
 .total-prices {
@@ -204,10 +184,9 @@ color: grey;
   margin: auto;
 }
 
-
 /* Quadrado azul de pontos */
 
-.icons-cupom{
+.icons-cupom {
   display: flex;
   border-style: dashed;
   border-color: rgb(166, 166, 229);
@@ -216,36 +195,40 @@ color: grey;
   color: gray;
   text-align: center;
   justify-content: center;
-  align-items:center;
-  
-  
-  
+  align-items: center;
+}
+.checkout-codigo-promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 10px;
 }
 
-/* Forma de pagamento */ 
+/* Forma de pagamento */
 
 p,
 label {
   align-items: center;
 }
 
-
 input {
-  margin: 0.4rem
+  margin: 0.4rem;
 }
 
-legend{
+legend {
   text-align: center;
   font-style: italic;
   font-size: 16px;
 }
 
-.payment{
- font-size: 15px;
- display: flexbox;
- padding: 1px;
- background-color: rgb(242, 242, 242);
- border: 2px solid rgb(205, 205, 205);
+.payment {
+  margin: 5px;
+  font-size: 15px;
+  display: flexbox;
+  padding: 1px;
+  background-color: rgb(242, 242, 242);
+  border: 2px solid rgb(205, 205, 205);
 }
 
 /* imagens dos bancos em depósito bancário*/
@@ -264,7 +247,7 @@ legend{
   height: auto;
 }
 
-.cash-back{
+.cash-back {
   max-width: 100px;
   max-height: 40px;
   width: auto;
@@ -274,55 +257,53 @@ legend{
 
 /* botão de continuar*/
 
-.button{
-  margin-left: 30rem;
+.button {
+  margin: 0px 0px 8px 0px;
+}
+.checkout-deposito-bank {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .continue-button {
-	box-shadow:inset 0px 9px 25px -5px #000000;
-	background-color:transparent;
-	border-radius:20px;
-	border:1px solid #29668f;
-	display:inline-block;
-	cursor:pointer;
-	color:#503c3c;
-	font-family:Arial;
-	font-size:13px;
-	font-weight:bold;
-	padding:10px 19px;
-	text-decoration:none;
-	text-shadow:0px 0px 0px #000000;
+  box-shadow: inset 0px 9px 25px -5px #000000;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  border: 1px solid #ccc;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--bg-color);
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 19px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #000000;
 }
 .continue-button:hover {
-	background-color:transparent;
+  background-color: var(--text-color);
 }
 .continue-button:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 .continue-button:hover {
-	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
-	background-color:#6c7c7c;
+  background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+  background-color: #6c7c7c;
 }
 .continue-button:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
-
-/* ENTREGA */ 
+/* ENTREGA */
 
 /* --- container de alterar email --- */
 
-.container-voce {
-  display: block;
-  height: 120vh;
-  width: 50%;
-  border: 1px solid gray;
-}
-
 h2 {
   margin: 10px;
+  text-align: center;
 }
 
 .container-voce .email {
@@ -337,9 +318,11 @@ h2 {
 
 /* --- container de adicionar endereço e endereço para envio --- */
 
-.container-voce .destino{
+.destino {
   display: flex;
- 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .container-voce .destino .add {
@@ -352,12 +335,11 @@ h2 {
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-  box-shadow: 0 5px 6px 0px gray ;
+  box-shadow: 0 5px 6px 0px gray;
   border-radius: 5px;
   text-decoration: none;
   background-color: white;
   color: blue;
-
 }
 
 .container-voce .destino .endereco {
@@ -366,7 +348,7 @@ h2 {
   height: 100px;
   margin: 10px;
   border: 1px solid black;
-  box-shadow: 0 5px 6px 0px gray ;
+  box-shadow: 0 5px 6px 0px gray;
   border-radius: 5px;
   padding: 10px;
   background-color: white;
@@ -378,29 +360,27 @@ h2 {
   justify-content: right;
   align-items: flex-end;
   font-size: 12px;
- 
-  
 }
 
 .container-voce .destino .endereco p i {
   color: blue;
-  margin: 0 0 0 5px ;
-
+  margin: 0 0 0 5px;
 }
 
 /* --- container para selecionar modo de entrega --- */
 
 .container-entrega {
   display: flex;
+  flex-direction: column;
   flex: 1;
-  width: 99%;
+  width: 100%;
   height: 250px;
-  margin: 0 0 10px 5px;
+  padding: 5px;
 }
 
 .col {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
 }
 
@@ -422,18 +402,14 @@ h2 {
 }
 
 .container-entrega .card .chekbox {
-  
   display: block;
   justify-content: center;
   align-items: center;
 }
 
 .container-entrega .card label {
-
   margin: 5px;
 }
-
-
 
 .container-entrega .card .preço-frete {
   display: flex;
@@ -446,26 +422,11 @@ h2 {
   font-size: 10px;
 }
 
-
 /* --- Caixa de atenção para prazo de entrega --- */
 
-.container-voce .atencao {
-  display: block;
-  margin: 10px;
-  padding: 3px;
-  border: 1px solid black;
-  border-radius: 10px;
-  text-align: center;
-  background-color: rgb(211, 210, 210);
-  font-size: 15px;
+.atencao {
+  padding: 10px;
 }
-
-.container-voce .atencao :nth-child(1) {
-  color: blue;
-  font-size: 15px;
-  margin: 10px;
-}
-
 
 /* --- container de caixa de observação e link para voltar ao carrinho --- */
 
@@ -473,7 +434,7 @@ h4 {
   margin: 10px;
 }
 
-.container-voce .observacao {
+.observacao {
   margin: 10px;
   display: block;
   border-radius: 5px;
@@ -489,18 +450,39 @@ h4 {
   color: black;
 }
 
+@media (max-width: 1020px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .checkout-dados {
+    margin-bottom: 10px;
+  }
+  .resume {
+    padding: 5px;
+  }
+  .responsive {
+    width: 100%;
+  }
+  .resume-table {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  tbody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
-@media (max-width: 650px) {
-  .container-voce {
-      width: 90%;
-      height: 100vw;
+  }
+  .cupom .icons-cupom {
+    width: 100%;
+  }
+  #checkout-tr-id{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
   }
 }
-
-
-
-  
-
-
-
-

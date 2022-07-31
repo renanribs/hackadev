@@ -17,287 +17,230 @@
 <header>
   <div class="nav container">
     <div class="div-logo">
-      <a href="/pages/home/home.html" class="logo">Loja Ecommerce</a>
+      <a href="../../index.html" class="logo">Loja Ecommerce</a>
     </div>
 </header>
 
 <body>
-
-  <div class="request">
-    <div class="request-tittle">Seu Pedido
-    </div>
-  </div>
-  <div class="product-review">
-    <table class="table-review">
-      <tr>
-        <div class="product-review-title">
-          <td></td>
-          <td>
-            <div class="review-tittle">Produto</div>
-          </td>
-          <td>
-            <div class="review-tittle">Atributos</div>
-          </td>
-          <td>
-            <div class="review-tittle">Preço Unitário</div>
-          </td>
-          <td>
-            <div class="review-tittle">Total</div>
-          </td>
+  <section>
+    <div class="checkout-title-products">
+      <div class="request">
+        <div class="request-tittle">Seu Pedido
         </div>
-      </tr>
-      <br>
-      <tr>
-        <div class="first-product"></div>
-        <td><img class="product-image" src="../checkout/img/iphone.png" alt="iphone" /></td>
-        <td>
-          <div class="product">Iphone X 256GB </div>
-        </td>
-        <td>
-          <div class="attributes">Cor <b>Black</b></div>
-        </td>
-        <td>
-          <div class="prices"><s>R$ 2.879,00</s> R$ 2.519,10</div>
-        </td>
-        <td>
-          <div class="total">R$ 2.519,10</div>
-        </td>
-      </tr>
-      <br>
-      <tr>
-        <div class="second-product"></div>
-        <td><img class="product-image" src="../checkout/img/tenis.jpg" alt="tenis" /></td>
-        <td>
-          <div class="product">Tênis Nike Feminino Corrida Revolution 5</div>
-        </td>
-        <td>
-          <div class="attributes">Cor <b>Rosa</b></div>
-        </td>
-        <td>
-          <div class="prices"><s>R$ 300,00</s> R$ 209,99</div>
-        </td>
-        <td>
-          <div class="total">R$ 209,99</div>
-        </td>
-      </tr>
-
-
-    </table>
-  </div>
-  <div class="main">
-    <div class="container-voce">
-
-      <h2>Você</h2>
-
-      <div class="email">
-        <p>fashion@gmail.com</p> <a href="../cadastro/registration.html">sair e trocar</a>
       </div>
-
-      <h2>Destino</h2>
-
-      <div class="destino">
-
-        <a href="#" class="add"><i class="fa-solid fa-circle-plus"></i></a>
-
-        <div class="endereco">
-          Praça da matriz, n. 174
-          Centro, Itaberái - GO
-          76630-000
-
-          <p>Endereço para envio <i class="fa-solid fa-circle-check"></i></p>
-
-        </div>
-
-      </div>
-
-      <h2>Forma de envio</h2>
-
-      <div class="forma-de-envio">
-
-        <div class="container-entrega">
-          <div class="col">
-            <div class="row">
-              <div class="card">
-                <input name="entrega" type="radio" value="retirada local" class="checkbox">
-                <label>Retirada no local</label>
-                <p class="prazo-entrega"></p>
-                <p class="preço-frete">Grátis</p>
-              </div>
+      <div class="product-review">
+        <div class="table-review">
+          <div class="checkout-descricao">
+            <div class="checkout-foto">
+              <img class="product-image" src="../checkout/img/iphone.png" alt="iphone" />
+              <img class="product-image" src="../checkout/img/tenis.jpg" alt="tenis" />
             </div>
-
-            <div class="row">
-              <div class="card">
-                <div class="checkbox"><input name="entrega" type="radio" value="motoboy">
-                  <label>Motoboy</label>
-                  <p class="prazo-entrega"></p>
+            <div class="checkout-produto-nome">Nome
+              <div class="checkout-product">Iphone X 256GB </div>
+              <div class="product">Tênis Nike Feminino Revolution 5</div>
+            </div>
+            <div class="checkout-produto-descricao">Descrição
+              <div class="checkout-attributes"><b>Black</b></div>
+              <div class="attributes"><b>Rosa</b></div>
+            </div>
+            <div class="checkout-produto-preco">Preço
+              <div class="checkout-prices">R$ 2.519,10</div>
+              <div class="prices">R$R$ 209,99</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="main">
+      <div class="checkout-dados">
+        <div class="container-voce">
+          <div>
+            <h2>Informações de envio</h2>
+            <div class="checkout-login">
+              <label id="checkout-dados-login">Jose Carlos da Silva</label>
+            </div>
+          </div>
+          <div>
+            <h2>Destino</h2>
+            <div class="destino">
+              <label id="checkout-dados-login">Pça da matriz,174 - Centro, Itaberái - GO - 76630-000</label>
+            </div>
+          </div>
+          <div>
+            <h2>Forma de envio</h2>
+            <div class="checkout-descricao-detalhado">
+              <p><i class='bx bxs-truck'></i>
+                FRETE GRÁTIS* PARA A MODALIDADE RETIRE NA LOJA</p>
+            </div>
+          </div>
+        </div>
+        <div class="forma-de-envio">
+          <div class="container-entrega">
+            <div class="col">
+              <div class="row">
+                <div class="card">
+                  <input name="entrega" type="radio" value="retirada local" class="checkbox">
+                  <label>CLIQUE E RETIRE</label>
+                  <p class="prazo-entrega"> </p>
+                  <p class="preço-frete">Grátis</p>
                 </div>
-                <p class="preço-frete">R$ 15,00</p>
+              </div>
+              <div class="row">
+                <div class="card">
+                  <div class="checkbox"><input name="entrega" type="radio" value="pac">
+                    <label>PAC</label>
+                    <p class="prazo-entrega"></p>
+                  </div>
+                  <p class="preço-frete">R$ 14,90</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card">
+                  <input name="entrega" type="radio" value="pac" class="checkbox">
+                  <label>SEDEX</label>
+                  <p class="prazo-entrega">Previsão: 5 dias úteis</p>
+                  <p class="preço-frete">R$ 32,90</p>
+                </div>
               </div>
             </div>
-
-            <div class="row">
-              <div class="card">
-                <input name="entrega" type="radio" value="pac" class="checkbox">
-                <label>PAC</label>
-                <p class="prazo-entrega">Previsão: 5 dias úteis</p>
-                <p class="preço-frete">R$ 32,20</p>
+            <div class="col">
+              <div class="row">
+                <div class="card">
+                  <input name="entrega" type="radio" value="frete gratis" class="checkbox">
+                  <label>MOTOBOY</label>
+                  <p class="prazo-entrega">Previsão: 3 dias úteis</p>
+                  <p class="preço-frete">R$ 12,90</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card">
+                  <input name="entrega" type="radio" value="retirada proxima" class="checkbox">
+                  <label>LOGGI</label>
+                  <p class="prazo-entrega">Previsão: 6 dias úteis</p>
+                  <p class="preço-frete">R$ 15,90</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card">
+                  <input name="entrega" type="radio" value="package" class="checkbox">
+                  <label>JADLOG</label>
+                  <p class="prazo-entrega">Previsão: 4 dias úteis</p>
+                  <p class="preço-frete">R$ 24,90</p>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col">
-            <div class="row">
-              <div class="card">
-                <input name="entrega" type="radio" value="frete gratis" class="checkbox">
-                <label>Frete-grátis</label>
-                <p class="prazo-entrega"></p>
-                <p class="preço-frete">Grátis</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="card">
-                <input name="entrega" type="radio" value="retirada proxima" class="checkbox">
-                <label>Retirar próximo ao meu endereço</label>
-                <p class="prazo-entrega">Previsão: 4 dias úteis</p>
-                <p class="preço-frete">R$ 20,70</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="card">
-                <input name="entrega" type="radio" value="package" class="checkbox">
-                <label>Package</label>
-                <p class="prazo-entrega">Previsão: 4 dias úteis</p>
-                <p class="preço-frete">R$ 35,50</p>
-              </div>
-            </div>
-          </div>
+          <div class="atencao"><i class="fa-solid fa-circle-exclamation"></i> Prazo de entrega dos Correios é de cinco
+            dias
+            após a postagem</div>
+          <h4>Observações</h4>
+          <textarea name="observação" cols="60" rows="4" class="observacao"
+            placeholder="Adicione alguma informação relacionada ao seu pedido"></textarea>
         </div>
+      </div>
+      <div class="responsive">
+        <div class="resume">
+          <table class="resume-table">
+            <tr id="checkout-tr-id">
+              <h3 class="resume-table-tittle">Resumo</h3>
 
-        <p class="atencao"><i class="fa-solid fa-circle-exclamation"></i> Prazo de entrega dos Correios é de cinco dias
-          após a postagem</p>
+              <td>
+                <div class="sub-total">Sub-total</div>
+              </td>
+              <td>
+                <div class="sub-total">R$ 2.729,09</div>
+              </td>
+            </tr>
+            <tr id="checkout-tr-id">
+              <td>
+                <div class="sub-total">Descontos</div>
+              </td>
+              <td>
+                <div class="sub-total">- R$ 150,00</div>
+              </td>
+            </tr>
+            <tr id="checkout-tr-id">
+              <th rowspan="4">
+                <div class="total-prices">TOTAL DO PEDIDO: </div>
+              </th>
+              <td>
+                <div class="total-prices"><b>R$ 2.579,09</b></div>
+              </td>
+            </tr>
+            <tr id="checkout-tr-id">
+              <td>
+                <div class="sub-total">Em até 10X de R$ 257,91</div>
+              </td>
+            </tr>
+            <tr id="checkout-tr-id">
+              <td>
+                <div class="sub-total">ou R$ 2.579,09 no</div>
+              </td>
+            </tr>
+            <tr id="checkout-tr-id">
+              <td>
+                <div class="sub-total">Pix com 10% de desconto</div>
+              </td>
+            </tr>
+          </table>
 
-        <h4>Observações</h4>
-        <textarea name="observação" cols="60" rows="4" class="observacao"
-          placeholder="Adicione alguma informação adicional relacionada ao seu pedido"></textarea>
+          <div class="cupom">
+            <div class="icons-cupom">
+              <img class="cash-back" src="../checkout/img/cashback.png" alt="cash">
+              <td class="offer-text">Você ganha 2.000,00 pontos nesta compra. Aproveite!</td>
+            </div>
 
-        <a href="../carrinho/cart.html" class="voltar-carrinho"><i class="fa-solid fa-angle-left"></i> Voltar para o
-          carrinho</a>
-
+            <div class="checkout-codigo-promo">
+              <label for="cupom">Código Promocional</label>
+              <input type="text" id="cupom" name="cupom">
+              <input type="submit" value="Aplicar">
+            </div>
+          </div>
+          <fieldset class="payment">
+            <legend>
+              Como deseja pagar?
+            </legend>
+            <div>
+              <input type="radio" id="ticket" name="payment-button" value="ticket" checked>
+              <i class="fa-solid fa-money-bill-wave"></i>
+              <label>Boleto</label>
+            </div>
+            <div>
+              <input type="radio" id="credit-card" name="payment-button" value="credit-card" checked>
+              <i class="fa-solid fa-credit-card"></i>
+              <label>Cartão de Crédito</label>
+            </div>
+            <div class="checkout-deposito-bank">
+              <input type="radio" id="bank-deposit" name="payment-button" value="bank-deposit" checked>
+              <i class="fa-solid fa-landmark"></i>
+              <label>Depósito bancário</label>
+              <img class="banks" src="../checkout//img/bb.png" alt="bb">
+              <img class="banks" src="../checkout//img/bradesco.png" alt="bra">
+              <img class="banks" src="../checkout//img/itau.png" alt="itau">
+            </div>
+            <div>
+              <input type="radio" id="pix-input" name="payment-button" value="pix-input" checked>
+              <img class="pix-button" src="../checkout/img/pix.png" alt="pix">
+              <label>PIX</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="button"><a href="#" class="continue-button">FAZER O PEDIDO</a></div>
       </div>
     </div>
-
-    <div class="responsive">
-      <div class="resume">
-        <table class="resume-table">
-          <tr>
-            <h3 class="resume-table-tittle">Resumo</h3>
-            <br>
-            <td>
-              <div class="sub-total">Sub-total</div>
-            </td>
-            <td>
-              <div class="sub-total">R$ 2.729,09</div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="sub-total">Descontos</div>
-            </td>
-            <td>
-              <div class="sub-total">- R$ 150,00</div>
-            </td>
-          </tr>
-          <tr>
-            <th rowspan="4">
-              <div class="total-prices">TOTAL DO PEDIDO</div>
-            </th>
-            <td>
-              <div class="total-prices"><b>R$ 2.579,09</b></div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="sub-total">Em até 10X de R$ 257,91</div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="sub-total">ou R$ 2.579,09 no</div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="sub-total">Pix com 10% de desconto</div>
-            </td>
-          </tr>
-        </table>
-
-        <div class="cupom">
-          <div class="icons-cupom">
-            <img class="cash-back" src="../checkout/img/cashback.png" alt="cash">
-            <td class="offer-text">Você ganha 2.000,00 pontos nesta compra. Aproveite!</td>
-          </div>
-          <br>
-          <div>
-            <label for="cupom">Cupom de desconto</label>
-            <input type="text" id="cupom" name="cupom">
-          </div>
-          <input type="submit" value="Aplicar">
-          <br>
-        </div>
-
-        <fieldset class="payment">
-          <legend>
-            Como deseja pagar?
-          </legend>
-
-          <div>
-            <input type="radio" id="ticket" name="payment-button" value="ticket" checked>
-            <i class="fa-solid fa-money-bill-wave"></i>
-            <label>Boleto</label>
-          </div>
-          <br>
-          <div>
-            <input type="radio" id="credit-card" name="payment-button" value="credit-card" checked>
-            <i class="fa-solid fa-credit-card"></i>
-            <label>Cartão de Crédito</label>
-          </div>
-          <br>
-          <div>
-            <input type="radio" id="bank-deposit" name="payment-button" value="bank-deposit" checked>
-            <i class="fa-solid fa-landmark"></i>
-            <label>Depósito bancário</label>
-            <img class="banks" src="../checkout//img/bb.png" alt="bb">
-            <img class="banks" src="../checkout//img/bradesco.png" alt="bra">
-            <img class="banks" src="../checkout//img/itau.png" alt="itau">
-          </div>
-          <br>
-          <div>
-            <input type="radio" id="pix-input" name="payment-button" value="pix-input" checked>
-            <img class="pix-button" src="../checkout/img/pix.png" alt="pix">
-            <label>PIX</label>
-          </div>
-        </fieldset>
-        <br>
-      </div>
-      <div class="button"><a href="#" class="continue-button">CONTINUAR</a></div>
-
-    </div>
-  </div>
+  </section>
   <footer>
     <div class="footer-div">
-      <h2>Fashionista</h2>
+      <h2 id="footer-h2">Loja Ecommerce</h2>
       <div class="content-footer">
-        Copyright©2022-2022, Fashionista Company. Todos os direitos
+        Copyright©2022-2022,Loja Ecommerce Company. Todos os direitos
         reservados.
       </div>
     </div>
-    </div>
-    </div>
   </footer>
   <script src="https://kit.fontawesome.com/81e40cb5df.js" crossorigin="anonymous"></script>
+  <script src="/main.js"></script>
 </body>
 
 </html>
