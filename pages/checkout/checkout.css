@@ -154,6 +154,7 @@ section {
   margin: 5px;
   border-radius: 10px;
   align-items: flex-start;
+  justify-content: center;
 }
 
 /* tela de total pedido */
@@ -275,7 +276,7 @@ button{
 
 button:hover {
   background-color: #be5152;
-  transition: 0.3;
+  transition: 0.3https://main--teste-hackadev.netlify.app/index.html;
 }
 
 .checkout-deposito-bank {
@@ -473,11 +474,13 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+
   }
   .checkout-dados {
     margin-bottom: 10px;
   }
   .resume {
+    width: 100%;
     padding: 5px;
   }
   .responsive {
